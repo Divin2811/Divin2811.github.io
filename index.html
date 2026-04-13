@@ -323,24 +323,24 @@
         </div>
       </div>
     </div>
-    <form class="contact-form" action="https://formspree.io/f/xeevjnkl" method="POST">
+   <form class="contact-form" action="https://formspree.io/f/xeevjnkl" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Prénom</label>
-          <input type="text" class="form-input" placeholder="Votre prénom"/>
+          <input type="text" name="prenom" class="form-input" placeholder="Votre prénom"/>
         </div>
         <div class="form-group">
           <label class="form-label">Nom</label>
-          <input type="text" class="form-input" placeholder="Votre nom"/>
+          <input type="text" name="nom" class="form-input" placeholder="Votre nom"/>
         </div>
       </div>
       <div class="form-group">
         <label class="form-label">Email</label>
-        <input type="email" class="form-input" placeholder="votre@email.com"/>
+        <input type="email" name="email" class="form-input" placeholder="votre@email.com"/>
       </div>
       <div class="form-group">
         <label class="form-label">Type de prestation</label>
-        <select class="form-select">
+        <select name="prestation" class="form-select">
           <option value="" disabled selected>Choisissez un service</option>
           <option>Mariage — Photo + Vidéo</option>
           <option>Événement Corporate</option>
@@ -352,11 +352,11 @@
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Date de l'événement</label>
-          <input type="date" class="form-input"/>
+          <input type="date" name="date" class="form-input"/>
         </div>
         <div class="form-group">
           <label class="form-label">Budget estimé</label>
-          <select class="form-select">
+          <select name="budget" class="form-select">
             <option>Moins de 150k XAF</option>
             <option>150k – 300k XAF</option>
             <option>300k – 600k XAF</option>
@@ -366,7 +366,7 @@
       </div>
       <div class="form-group">
         <label class="form-label">Message</label>
-        <textarea class="form-textarea" placeholder="Décrivez votre projet, le lieu, vos attentes..."></textarea>
+        <textarea name="message" class="form-textarea" placeholder="Décrivez votre projet, le lieu, vos attentes..."></textarea>
       </div>
      <button type="submit" class="btn-submit">Envoyer la demande →</button>
     </form>
